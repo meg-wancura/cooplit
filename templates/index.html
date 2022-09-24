@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Main Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Home Page</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<style>
+    		#map{
+        		height:400px;
+        		width:100%;
+    		}
 	</head>
 	<body>
 		<form action="greet" method="post">
@@ -14,5 +21,18 @@
 			<br>
 			<input type="submit" value="GREET" id="greet">
 		</form>
+		<h1>My Google Map</h1>
+		<div id="map"></div>
+		<script>
+    		function initMap(){
+        		var options = {
+            		zoom:4,
+            		center: {lat:43.3601,lng:-71.0589}
+        		}
+        		var map = new google.maps.Map(document.getElementById('map'), options);
+    		}
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer>
+       </script>
 	</body>
 </html>
