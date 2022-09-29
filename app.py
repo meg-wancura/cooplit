@@ -3,9 +3,10 @@ from flask import Flask, render_template, request, flash
 app = Flask(__name__)
 app.secret_key = "password"
 
-@app.route("/hello")
-def index():
-    flash("what's your name?")
+@app.route("/")
+@app.route("/home")
+def home():
+    flash("Hello! Welcome to Cooplit")
     return render_template("index.html")
 
 @app.route("/greet", methods=["POST","GET"])
