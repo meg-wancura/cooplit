@@ -10,9 +10,7 @@ def index():
 
 @app.route("../html/about")
 def about():
-    return "<h2>about test</h2>"
-
-    ##render_template("../html/about.html")###
+    return render_template("../html/about.html")
 
 @app.route("../html/contact")
 def contact():
