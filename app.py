@@ -8,11 +8,11 @@ app.secret_key = "password"
 def index():
     return render_template("index.html")
 
-@app.route("../html/about")
+@app.route("/about")
 def about():
     return render_template("../html/about.html")
 
-@app.route("../html/contact")
+@app.route("/contact")
 def contact():
     return render_template("../html/contact.html")
 
