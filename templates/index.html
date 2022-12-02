@@ -26,7 +26,7 @@
 						<li><a href="/templates" class="nav-link px-2 text-secondary">Home</a></li>
 						<li><a href="../html/about.html" class="nav-link px-2 text-white">Mission</a></li>
 						<li><a href="../html/contact.html" class="nav-link px-2 text-white">Contact</a></li>
-						<li><a href="../html/mock.html" class="nav-link px-2 text-white">Network Mock-Up</a></li>
+						<!--<li><a href="../html/mock.html" class="nav-link px-2 text-white">Network Mock-Up</a></li>-->
 						</ul>
 	        	</div>
 			</div>
@@ -48,72 +48,75 @@
 					</div>
 				</div>
 			</div>
-	      </main>
-   	 	</div>
 
-		<div class="container">
 
-			<!-- Geographical map example-->
-			<div class="row">
-				<div class="col">
-					<div id="geoMap" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<!-- First slide, zoomed out map -->
-							<div class="carousel-item active">
-								<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/geoMap.png?raw=true" class="d-block w-100" alt="world view">
-							</div>
-							<!-- Second slide, zoom1x, country level -->
-							<div class="carousel-item">
-								<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/geoMap.png?raw=true" class="d-block w-100" alt="country view">
-							</div>
-							<!-- Third slide, zoom2x, state level -->
-							<div class="carousel-item">
-								<img src="https://content.codecademy.com/courses/learn-bootstrap-components/garden-slide3.jpg" class="d-block w-100" alt="inside of a greenhouse">
-							</div>
-							<!-- fourth slide, zoom3x, school level -->
-							<!-- CAN I MAKE THIS INTERACTIVE? -->
-							<div class="carousel-item">
-								<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/geoMap_SchoolListing.png?raw=true" class="d-block w-100" alt="school listing">
+				<div class="container">
+
+					<!-- Geographical map example-->
+					<div class="row">
+						<div class="col">
+							<div id="geoMap" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner" role="listbox" style=" width:100%; height: 800px !important;">
+									<!-- First slide, academic network-->
+									<div class="carousel-item active">
+										<a href="https://www.wired.com/2009/03/mapofscience/"><img src="https://www.wired.com/images_blogs/photos/uncategorized/2009/03/11/journalpone0004803g005.png?raw=true" class="d-block w-100" alt="world view"></a>
+									</div>
+									<!-- A single field -->
+									<div class="carousel-item">
+										<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldMap_subfieldView.png?raw=true" class="d-block w-100" alt="world view">
+									</div>
+									<!-- 2 slide, one field, all the universities  -->
+									<div class="carousel-item">
+										<a href="https://www.vosviewer.com/products"><img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/university%20collaborations.png?raw=true" class="d-block w-100" alt="world view"></a>
+									</div>
+
+
+								</div>
+
+								<!-- controls for image panning: -->
+								<button class="carousel-control-prev" type="button" data-bs-target="#geoMap" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#geoMap" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden"> Next </span>
+								</button>
 							</div>
 						</div>
-
-						<!-- controls for image panning: -->
-						<button class="carousel-control-prev" type="button" data-bs-target="#geoMap" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#geoMap" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden"> Next </span>
-						</button>
+					</div>
+					<div class="row"></div>
+						<p>
+							Please click on the first and third images above to see some great work out there on mapping academia.
+						</p>
 					</div>
 				</div>
-			</div>
+		</main>
 
-			<!-- Field map example-->
+			<!-- Field map example
 			<div class="row">
 				<div class="col">
 					<div id="fieldMap" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<!-- First slide, zoomed out map with fields listed-->
+						<div class="carousel-inner"> 
+							-- First slide, zoomed out map with fields listed--
 							<div class="carousel-item active">
 								<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldMap.png?raw=true" class="d-block w-100" alt="main field map">
 							</div>
-							<!-- Second slide, zoom1x, brances to locations -->
+							-- Second slide, zoom1x, brances to locations --
 							<div class="carousel-item">
 								<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldMap_subfieldView.png?raw=true" class="d-block w-100" alt="subfield view">
 							</div>
-							<!-- Third slide, zoom2x, subfield view -->
+							-- Third slide, zoom2x, subfield view --
 							<div class="carousel-item">
 								<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldMap_subfieldView.png?raw=true" class="d-block w-100" alt="inside of a greenhouse">
 							</div>
-							<!-- fourth slide, zoom3x, profile view -->
-							<!-- CAN I MAKE THIS INTERACTIVE? -->
+							-- fourth slide, zoom3x, profile view --
+							-- CAN I MAKE THIS INTERACTIVE? --
 							<div class="carousel-item">
 								<img src="https://content.codecademy.com/courses/learn-bootstrap-components/garden-slide3.jpg" class="d-block w-100" alt="inside of a greenhouse">
 							</div>
 						</div>
-						<!-- controls for image panning: -->
+						-- controls for image panning: --
 						<button class="carousel-control-prev" type="button" data-bs-target="#fieldMap" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
@@ -125,11 +128,13 @@
 					</div>
 				</div>
 			</div>
+		-->
 
 			<!-- Contact us/learn more-->
 			<div class = "row">
 				<div class = "column">
 					<button class="btn btn-secondary">
+						<a href="../html/about.html" class="nav-link px-2 text-white">Our Vision!</a>
 					</button>
 				</div>
 			</div>
