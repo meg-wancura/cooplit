@@ -24,8 +24,8 @@
 			
 					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 						<li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
-						<li><a href="/" class="nav-link px-2 text-white">But What Is It?</a></li> <!-- find out how to move to section in page here-->
-						<li><a href="/contact" class="nav-link px-2 text-white">Contact</a></li>
+						<li><a href="#Demo" class="nav-link px-2 text-white">But What Is It?</a></li> <!-- find out how to move to section in page here-->
+						<li><a href="/contact.html" class="nav-link px-2 text-white">Contact</a></li>
 						<li><a href="/mock.html" class="nav-link px-2 text-white">Demo</a></li>
 						</ul>
 	        	</div>
@@ -46,11 +46,6 @@
 								to find other people interested in the same stuff you are.</p>
 							<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldmatch.png?raw=true" class="d-block w-100" alt="connection">
 						</div>
-						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1444981381&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-501798790" title="Megan Who Cries" target="_blank" style="color: #cccccc; text-decoration: none;">Megan Who Cries</a> · <a href="https://soundcloud.com/user-501798790/cooplit-voiceover" title="Cooplit  Voiceover" target="_blank" style="color: #cccccc; text-decoration: none;">Cooplit  Voiceover</a></div>
-						<audio controls>
-							<source src="https://soundcloud.com/user-501798790/cooplit-voiceover?si=b72c5d02fcd84b8dac1040e336da183e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mp3">
-							Your browser does not support this audio element
-						</audio>
 					</div>
 				</div>
 			</div>
@@ -168,48 +163,64 @@
 				</div>
 			</div>
 
-				<div class="container">
+				<div class="container mb-5">
 					<div class="row align-items-center rounded-3 border shadow-lg ">
-						<h1 class="display-8 fw-bold lh-1 mt-3 mb-3">So What Does It Look Like?</h1>
-					<!-- Geographical map example-->
-					<div class="row">
-						<div class="col">
-							<div id="geoMap" class="carousel slide" data-bs-ride="carousel">
-								<div class="carousel-inner" role="listbox" style=" width:100%; height: 800px !important;">
-									<!-- First slide, academic network-->
-									<div class="carousel-item active">
-										<a href="https://www.wired.com/2009/03/mapofscience/"><img src="https://www.wired.com/images_blogs/photos/uncategorized/2009/03/11/journalpone0004803g005.png?raw=true" class="d-block w-100" alt="world view"></a>
-									</div>
-									<!-- A single field -->
-									<div class="carousel-item">
-										<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldMap_subfieldView.png?raw=true" class="d-block w-100" alt="world view">
-									</div>
-									<!-- 2 slide, one field, all the universities  -->
-									<div class="carousel-item">
-										<a href="https://www.vosviewer.com/products"><img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/university%20collaborations.png?raw=true" class="d-block w-100" alt="world view"></a>
-									</div>
+						<h1 class="display-8 fw-bold lh-1 mt-3 mb-3" id="Demo">So What Does It Look Like?</h1>
+						<!-- Geographical map example-->
+						<div class="row">
+							<div class="col">
+								<div id="geoMap" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner" role="listbox" style=" width:100%; height: 800px !important;">
+										<!-- First slide, academic network-->
+										<div class="carousel-item active">
+											<a href="https://www.wired.com/2009/03/mapofscience/"><img src="https://www.wired.com/images_blogs/photos/uncategorized/2009/03/11/journalpone0004803g005.png?raw=true" class="d-block w-100" alt="world view"></a>
+										</div>
+										<!-- A single field -->
+										<div class="carousel-item">
+											<img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/fieldMap_subfieldView.png?raw=true" class="d-block w-100" alt="world view">
+										</div>
+										<!-- 2 slide, one field, all the universities  -->
+										<div class="carousel-item">
+											<a href="https://www.vosviewer.com/products"><img src="https://github.com/meg-wancura/meg-wancura/blob/main/webimgs/university%20collaborations.png?raw=true" class="d-block w-100" alt="world view"></a>
+										</div>
 
 
+									</div>
+
+									<!-- controls for image panning: -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#geoMap" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#geoMap" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden"> Next </span>
+									</button>
 								</div>
-
-								<!-- controls for image panning: -->
-								<button class="carousel-control-prev" type="button" data-bs-target="#geoMap" data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#geoMap" data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="visually-hidden"> Next </span>
-								</button>
+								<p class="mt-3 mb-3 font-size-6">
+									Please click on the first and third images above to see some great work out there on mapping academia!
+								</p>
 							</div>
 						</div>
 					</div>
-					<div class="row"></div>
-						<p>
-							Please click on the first and third images above to see some great work out there on mapping academia.
-						</p>
+				</div>
+			
+			<!-- funny song insert-->
+			<div class="container mb-5">
+				<div class="row align-items-center rounded-3 border shadow-lg bg-dark bg-secondary">
+					<div class="row mb-3">
+						<div class = "col">
+							<h2 class="display-8 fw-bold lh-1 mt-3 mb-3 text-white">An Emotional Appeal</h1>
+								<p class="font-size-1 text-white">(amateur web builder, amateur musician, 'tis not plug, 'tis simply a failure to understand another way to insert audio)</p>
+							<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1444981381&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+							<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+								<a href="https://soundcloud.com/user-501798790" title="" target="_blank" style="color: #cccccc; text-decoration: none;"></a>
+								<a href="https://soundcloud.com/user-501798790/cooplit-voiceover" title="Cooplit  Voiceover" target="_blank" style="color: #cccccc; text-decoration: none;"></a>
+							</div>
+						</div>
 					</div>
 				</div>
+			</div>
 
 			<!-- Contact us/learn more-->
 			<div class = "row">
@@ -219,6 +230,8 @@
 					</button>
 				</div>
 			</div>
+
+
 	      </main>
    	 	</div>
 	
