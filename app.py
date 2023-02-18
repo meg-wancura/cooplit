@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, flash
-import json
+#import json
 
 app = Flask(__name__, template_folder="templates")
 app.secret_key = "password"
@@ -24,4 +24,4 @@ def mock():
 @app.route("/function", methods=["GET"])
 def function():
     req = request.args.get('https://api.openalex.org/authors/https://orcid.org/0000-0002-1298-3089')
-    return req
+    print(req)
