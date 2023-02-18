@@ -25,3 +25,4 @@ def mock():
 def function():
     req = request.args.get('https://api.openalex.org/authors/https://orcid.org/0000-0002-1298-3089')
     print(req)
+    return 
