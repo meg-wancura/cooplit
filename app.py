@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 app.secret_key = "password"
 
 
@@ -27,7 +27,3 @@ def function():
     data = req.content
     json_data = json.loads(data)
     return render_template("/function.html", data=jason_data)
-
-@app.errorhandler(404)
-def error():
-	return render_template("/error.html")
