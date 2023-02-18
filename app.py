@@ -21,13 +21,13 @@ def contact():
 def mock():
     return render_template("/mock.html")
 
-@app.route("function", methods=["GET"])
+@app.route("/function", methods=["GET"])
 def function():
     req = request.get('https://api.openalex.org/authors/https://orcid.org/0000-0002-1298-3089')
     data = req.content
     json_data = json.loads(data)
-    return render_template('function.html', data=jason_data)
+    return render_template("/function.html", data=jason_data)
 
 @app.errorhandler(404)
 def error():
-	return render_template("error.html")
+	return render_template("/error.html")
