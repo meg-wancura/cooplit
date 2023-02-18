@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, flash
-import requests
 import json
 
 app = Flask(__name__)
@@ -24,7 +23,7 @@ def contact():
 
 @app.route("function", methods=["GET"])
 def function():
-    req = requests.get('https://api.openalex.org/authors/https://orcid.org/0000-0002-1298-3089')
+    req = request.get('https://api.openalex.org/authors/https://orcid.org/0000-0002-1298-3089')
     data = req.content
     json_data = json.loads(data)
     return render_template('function.html', data=jason_data)
