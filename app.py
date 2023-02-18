@@ -18,7 +18,7 @@ def contact():
     return render_template("/contact.html")
 
 @app.route("/mock", methods=["GET"])
-def contact():
+def mock():
     return render_template("/mock.html")
 
 @app.route("function", methods=["GET"])
